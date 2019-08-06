@@ -1,0 +1,602 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentación de la adaptación del dataset de Buenos Aires Compras al estándar de Open Contracting">
+      
+      
+        <link rel="canonical" href="https://datosgcba.github.io/bac-open-contracting/ejemplos/">
+      
+      
+        <meta name="author" content="Buenos Aires Data">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Casos de Uso - BAC - Open Contracting</title>
+      
+    
+    
+  <link rel="stylesheet" href="../assets/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="../assets/stylesheets/bastrap.css">
+  <link rel="stylesheet" href="../assets/stylesheets/header.css">
+  <link rel="stylesheet" href="../assets/stylesheets/footer.css">
+  
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+  <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#ejemplos-casos-de-uso" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header id="header">
+    <div class="border-gradient">
+      <div class="container">
+        <div id="logo-sitio">
+          <a href="https://datosgcba.github.io/bac-open-contracting/" title="BAC - Open Contracting" style="text-decoration: none;">
+            <div id="ba-logo" class="navbar-brand img-responsive" data-original-title="" title="">
+            </div>
+          </a>
+        </div>
+        <div id="nombre-sitio">
+          <a href="https://datosgcba.github.io/bac-open-contracting/">
+            <h1>BAC - Open Contracting</h1>
+          </a>
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="row back">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                  <label class="md-header-nav__button" for="__drawer">
+                    <span class="sr-only">Cambiar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </label>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="md-header" data-md-component="header">
+      <div class="container">
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"></div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Escriba para comenzar la búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgcba/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+        <!-- Site title -->
+        <label class="md-nav__title md-nav__title--site" for="__drawer">
+          <a href="https://datosgcba.github.io/bac-open-contracting/"
+              title="BAC - Open Contracting" class="md-nav__button md-logo">
+            
+              <img src="../assets/images/logos/ba_logo.png" width="48" height="48" />
+            
+          </a>
+          BAC - Open Contracting
+        </label>
+      
+        <!-- Repository containing source -->
+        
+          <div class="md-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/datosgcba/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        
+      
+        <!-- Render item list -->
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../bac/" title="Buenos Aires Compras" class="md-nav__link">
+      Buenos Aires Compras
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+
+  <li class="md-nav__item">
+    <a href="../politica-publicacion/" title="Política de Publicación" class="md-nav__link">
+      Política de Publicación
+    </a>
+  </li>
+
+            <hr/>
+          
+            
+            
+            
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Casos de Uso
+      </label>
+    
+    <a href="./" title="Casos de Uso" class="md-nav__link md-nav__link--active">
+      Casos de Uso
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-recorrido-de-un-proceso-dentro-del-estandar-open-contracting" title="El recorrido de un proceso dentro del estándar Open Contracting" class="md-nav__link">
+    El recorrido de un proceso dentro del estándar Open Contracting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-a-responder-con-los-datos" title="Preguntas a responder con los datos" class="md-nav__link">
+    Preguntas a responder con los datos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cual-fue-el-porcentaje-de-convocatorias-de-las-iniciadas-y-finalizadas-en-2018-que-resultaron-adjudicadas" title="¿Cuál fué el porcentaje de convocatorias de las iniciadas y finalizadas en 2018 que resultaron adjudicadas?" class="md-nav__link">
+    ¿Cuál fué el porcentaje de convocatorias de las iniciadas y finalizadas en 2018 que resultaron adjudicadas?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-calcular-estadisticas-descriptivas-de-los-montos-totales-de-los-contratos-iniciados-y-finalizados-en-2018" title="¿Cómo calcular estadísticas descriptivas de los montos totales de los contratos iniciados y finalizados en 2018?" class="md-nav__link">
+    ¿Cómo calcular estadísticas descriptivas de los montos totales de los contratos iniciados y finalizados en 2018?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuales-son-las-empresas-a-las-cuales-se-adjudicaron-los-mayores-contratos-durante-el-2018" title="¿Cuáles son las empresas a las cuales se adjudicaron los mayores contratos durante el 2018?" class="md-nav__link">
+    ¿Cuáles son las empresas a las cuales se adjudicaron los mayores contratos durante el 2018?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+            <hr/>
+          
+        </ul>
+      </nav>
+      
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenidos de la sección</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-recorrido-de-un-proceso-dentro-del-estandar-open-contracting" title="El recorrido de un proceso dentro del estándar Open Contracting" class="md-nav__link">
+    El recorrido de un proceso dentro del estándar Open Contracting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-a-responder-con-los-datos" title="Preguntas a responder con los datos" class="md-nav__link">
+    Preguntas a responder con los datos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cual-fue-el-porcentaje-de-convocatorias-de-las-iniciadas-y-finalizadas-en-2018-que-resultaron-adjudicadas" title="¿Cuál fué el porcentaje de convocatorias de las iniciadas y finalizadas en 2018 que resultaron adjudicadas?" class="md-nav__link">
+    ¿Cuál fué el porcentaje de convocatorias de las iniciadas y finalizadas en 2018 que resultaron adjudicadas?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-calcular-estadisticas-descriptivas-de-los-montos-totales-de-los-contratos-iniciados-y-finalizados-en-2018" title="¿Cómo calcular estadísticas descriptivas de los montos totales de los contratos iniciados y finalizados en 2018?" class="md-nav__link">
+    ¿Cómo calcular estadísticas descriptivas de los montos totales de los contratos iniciados y finalizados en 2018?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuales-son-las-empresas-a-las-cuales-se-adjudicaron-los-mayores-contratos-durante-el-2018" title="¿Cuáles son las empresas a las cuales se adjudicaron los mayores contratos durante el 2018?" class="md-nav__link">
+    ¿Cuáles son las empresas a las cuales se adjudicaron los mayores contratos durante el 2018?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/datosgcba/edit/master/docs/ejemplos.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="ejemplos-casos-de-uso">Ejemplos - Casos de Uso</h1>
+<h2 id="el-recorrido-de-un-proceso-dentro-del-estandar-open-contracting">El recorrido de un proceso dentro del estándar Open Contracting</h2>
+<p>Los procesos de compras dentro del estándar Open Contracting se identifican con un identificador único internacional. Se encuentran en el campo <em>“ocid”</em> y para el caso de Buenos Aires llevan el prefijo <em>“ocds-bulbcf”</em>. El campo <em>“ocid”</em> identifica a todos los procesos de compras a lo largo de las distintas etapas del mismo.</p>
+<p>En el recurso llamado <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/f8eb531f-120c-4e91-bd5d-d43bb28cc696">“Convocatoria”</a></strong> se puede encontrar la información correspondiente a la convocatoria de proveedores de los bienes y servicios que las distintas reparticiones del Gobierno de la Ciudad pretenden contratar. En esta etapa se define el procedimiento de selección de proveedores y la modalidad de contratación que llevará el documento contractual al momento de su firma. 
+El archivo, a su vez, contiene los datos del resultado de la convocatoria y el detalle de cada uno de los ítems que se desean adquirir a través del proceso de compras en cuestión, incluyendo las cantidades a contratar y el precio unitario del bien o servicio en el caso que corresponda (en convenios marco no se especifica ex-ante el precio unitario del bien).
+La información se encuentra desagregada a nivel de ítem. Por esta razón, cada una de las filas del recurso contiene la descripción y cantidades del ítem que se espera contratar y se encuentran asociadas a su correspondiente proceso a través del campo <em>“ocid”</em> o *<em>“tender/id”</em>.</p>
+<p>En el recurso llamado <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/b7e4bae8-0e0f-4e10-8b89-3860cf5b7f1b">“Adjudicación”</a></strong> se especifica la información correspondiente a los procesos que han sido adjudicados, incorporando el detalle de los ítems asociados a cada adjudicación.
+Los datos se encuentran desagregados a nivel de tipo de ítem, los cuales se encuentran vinculados a su correspondiente proceso de compras a través del campo <em>“ocid”</em>. </p>
+<p>El recurso llamado <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/a85472d6-b949-4617-a3a0-50e25f1274b3">“Contratación”</a></strong> contiene el detalle de los contratos firmados entre las distintas entidades del Gobierno de la Ciudad y los proveedores participantes del contrato. Tal como ocurre en <strong>“Convocatoria”</strong> y <strong>“Adjudicación”</strong>, los datos están desagregados a nivel de ítem.
+Del recurso se puede extraer información relativa a la cantidad efectiva de items contratados, el precio unitario y el monto total del contrato (que puede ser distinto al monto esperado por el cual se convoca). </p>
+<p>El inicio de un proceso de compras puede concluir sin un contrato firmado (en el caso de que la convocatoria fracasa o queda desierta de proveedores) o con al menos un contrato firmado. Los procesos pueden resultar adjudicados a más de un proveedor, siendo estos encargados de proveer un tipo de bien de los diversos que la entidad del Gobierno pretende adquirir. Con cada uno de ellos se firma un contrato específico siguiendo la modalidad de contratación que se fija en la convocatoria.
+Dada esta relación entre los procesos de compras y la cantidad de contratos que pueden resultar del mismo, es necesario tomar en cuenta al campo <em>“contracts/0/id”</em> para identificar los ítems que se contratan con un proveedor específico y al campo <em>“ocid”</em> para encontrar todos los contratos que derivan de un proceso de compras en particular.</p>
+<h2 id="preguntas-a-responder-con-los-datos">Preguntas a responder con los datos</h2>
+<h3 id="cual-fue-el-porcentaje-de-convocatorias-de-las-iniciadas-y-finalizadas-en-2018-que-resultaron-adjudicadas">¿Cuál fué el porcentaje de convocatorias de las iniciadas y finalizadas en 2018 que resultaron adjudicadas?</h3>
+<p>1- Descargar el recurso <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/f8eb531f-120c-4e91-bd5d-d43bb28cc696">“Convocatoria”</a></strong>, es el que contiene la información necesaria para el análisis. </p>
+<p>2- Filtrar los procesos de compras según su fecha de inicio y fin: Seleccionar aquellos que tienen fecha de inicio (<em>“tender/tenderPeriod/startDate”</em>) mayor al 31 de diciembre de 2017 y fecha de fin (<em>“tender/tenderPeriod/endDate”</em>) menor al 1 de enero de 2019.</p>
+<p>3- Los datos del recurso <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/f8eb531f-120c-4e91-bd5d-d43bb28cc696">“Convocatoria”</a></strong> se encuentran desagregados al nivel de <em>“Ítem”</em>. Cada fila contiene el detalle de cada uno de los ítems que un proceso de compras (identificado en <em>“ocid”</em>) pretende adquirir. Asimismo, cada una de las filas contiene información relativa al detalle del proceso de compras (si se trata de un mismo proceso de compras, la información va a ser exactamente igual en todas las filas), entre lo que se encuentra el estado actual del mismo, representado en el campo <em>“tender/status”</em>. Es necesario eliminar los valores duplicados utilizando la columna <em>“ocid”</em>.</p>
+<p>4- Contar los valores del campo <em>“tender/status”</em>: Contiene el estado actual del proceso de compras. 
+Sus valores posibles son: <em>active</em> (la convocatoria está en proceso), <em>cancelled</em> (el \
+proceso ha sido cancelado), <em>unsuccessful</em> (la convocatoria no ha sido exitosa), <em>complete</em> (la convocatoria se ha completado).</p>
+<h3 id="como-calcular-estadisticas-descriptivas-de-los-montos-totales-de-los-contratos-iniciados-y-finalizados-en-2018">¿Cómo calcular estadísticas descriptivas de los montos totales de los contratos iniciados y finalizados en 2018?</h3>
+<p>1- Descargar el recurso <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/a85472d6-b949-4617-a3a0-50e25f1274b3">“Contratación”</a></strong>, es el que contiene la información necesaria para el análisis. </p>
+<p>2- Filtrar los contratos según su fecha de inicio y fin: Seleccionar aquellos que tienen fecha de inicio (<em>“contracts/0/period/startDate”</em>) mayor al 31 de diciembre de 2017 y fecha de fin (<em>“contracts/0/period//endDate”</em>) menor al 1 de enero de 2019.</p>
+<p>3- El campo <em>“contracts/0/value/amount”</em> es el que contiene los montos totales de los contratos perfeccionados. Es el dato relevante para responder a la pregunta. Pero, dado que los datos publicados se encuentran desagregados a nivel de ítem, el monto de la columna <em>“contracts/0/value/amount”</em> se encuentra repetido una cantidad de veces igual a la cantidad de ítems distintos que se adquieren mediante el contrato en cuestión. En consecuencia, es central para el análisis eliminar esos valores duplicados.</p>
+<p>4- Cada uno de los contratos está identificado con un identificador en el campo <em>“contracts/0/id”</em>. Utilizando los valores de este campo se eliminan las filas que duplican la información que necesitamos para el análisis.</p>
+<p>5- Finalmente, se debe alcanzar una tabla que contenga un único ID de contrato por fila y que tenga asociado los campos <em>“contracts/0/value/amount”</em> y <em>“contracts/0/value/currency”</em> para conocer el monto total por el cual se perfeccionó el contrato y la moneda del mismo (pueden ser pesos argentinos, dólares estadounidenses o euros).</p>
+<p>6- Con los valores de esta tabla se pueden calcular estadísticas descriptivas sin estar incurriendo en errores por duplicaciones.</p>
+<h3 id="cuales-son-las-empresas-a-las-cuales-se-adjudicaron-los-mayores-contratos-durante-el-2018">¿Cuáles son las empresas a las cuales se adjudicaron los mayores contratos durante el 2018?</h3>
+<p>1- Descargar los recursos <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/a85472d6-b949-4617-a3a0-50e25f1274b3">“Contratación”</a></strong> y <strong><a href="https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/bece0240-eb9b-40c4-8928-cd77c4f62704">“Participantes”</a></strong>, son los que contienen la información necesaria para el análisis. <strong>“Participantes”</strong> especifica quienes son las partes que firman cada uno de los contratos.</p>
+<p>2- Filtrar los contratos según su fecha de inicio y fin: Seleccionar aquellos que tienen fecha de inicio (<em>“contracts/0/period/startDate”</em>) mayor al 31 de diciembre de 2017 y fecha de fin (<em>“contracts/0/period//endDate”</em>) menor al 1 de enero de 2019.</p>
+<p>3- El campo <em>“contracts/0/value/amount”</em> es el que contiene los montos totales de los contratos perfeccionados. Es el dato relevante para responder a la pregunta. Pero, dado que los datos publicados se encuentran desagregados a nivel de ítem, el monto de la columna <em>“contracts/0/value/amount”</em> se encuentra repetido una cantidad de veces igual a la cantidad de ítems distintos que se adquieren mediante el contrato en cuestión. En consecuencia, es central para el análisis eliminar esos valores duplicados.</p>
+<p>4- Cada uno de los contratos está identificado con un identificador en el campo <em>“contracts/0/id”</em>. Utilizando los valores de este campo se eliminan las filas que duplican la información que necesitamos para el análisis.</p>
+<p>5- Con la tabla resultante, se ordenan los valores según <em>“contracts/0/value/amount”</em> para conseguir aquellos de mayor valor.</p>
+<p>6- Utilizando el Identificador de los contratos con montos mas grandes, se filtran las filas de la tabla <strong>“Participantes”</strong> para encontrar la entidad compradora y la empresa proveedora del contrato en cuestión.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer id="ba-footer">
+  <div class="container">
+    <div class="row footer-row">
+      <div class="col-md-6 col-sm-12 col-xs-12" >
+        <div class="col-xs-6">
+          <div class="container-ba">
+            <a href="http://www.buenosaires.gob.ar/"><div class="img-responsive logo_footer"></div></a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="container-ba-border">
+            <a href="#"><h3>Estrategia de Apertura de Datos del GCBA</h3></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <section class="container-redes">
+          <ul class="mini-social">
+            <li><a class="social-fb" href="http://www.facebook.com/gcba" target="_blank">Facebook</a></li>
+            <li><a class="social-tw" href="http://www.twitter.com/gcba" target="_blank">Twitter</a></li>
+            <li><a class="social-yt" href="http://www.youtube.com/user/GCBA" target="_blank">Youtube</a></li>
+            <li><a class="social-in" href="https://www.instagram.com/buenosaires/" target="_blank">Instagram</a></li>
+            <li><a class="social-gp" href="https://plus.google.com/+GobiernodelaCiudaddeBuenosAires/" target="_blank">Google+</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+      <br>
+
+      <div class="col-md-12 col-sm-12" style="margin-top: -55px;">
+        <div class="container-ciudad">
+        <br>
+        <a href="http://www.buenosaires.gob.ar/"><div class="img-responsive logo_footer_ciudad"></div></a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
