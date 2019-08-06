@@ -1,0 +1,13 @@
+site_name: BAC - Open Contracting
+site_url: https://datosgcba.github.io/bac-open-contracting/
+site_description: Documentación de la adaptación del dataset de Buenos Aires Compras al estándar de Open Contracting
+site_author: Buenos Aires Data
+repo_url: https://github.com/datosgcba/
+
+nav:
+  - Inicio: index.md
+  - Buenos Aires Compras: bac.md
+  - Política de Publicación: politica-publicacion.md
+  - Casos de Uso: ejemplos.md
+theme:
+  name: 'datosgcba_docs'
