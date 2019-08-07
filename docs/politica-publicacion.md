@@ -52,6 +52,79 @@ La información del sistema de compras y contrataciones se encuentra publicada e
 
 Archivo con formato [JSON (JavaScript Object Notation)](https://es.wikipedia.org/wiki/JSON) que contiene la información de todos los procesos de compras publicados en sus diferentes etapas (convocatoria, adjudicación, contratación, participantes). Para cada proceso de compra se asigna un OCID (Open Contracting Identifier), al cual se asocia toda la información referida a las etapas por las que pasa el proceso. 
 
+### Muestra de la estructura del JSON
+*Cada uno de los procesos de compras publicados se organizan replicando la siguiente estructura. El campo OCID es el identificador único para cada proceso de compras.*
+
+```
+    "uri": "http://data.buenosaires.gob.ar/dataset/buenos-aires-compras",
+    "publisher": {
+        "name": "Gobierno de la Ciudad de Buenos Aires"
+    },
+    "publishedDate": "2019-08-06T09:30:00Z",
+    "license": "https://creativecommons.org/licenses/by/2.5/ar/",
+    "publicationPolicy": "https://github.com/datosgcba/BAC_OCDS",
+    "version": "1.1",
+    "extensions": [
+        "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_signatories_extension/master/extension.json"
+    ],
+    "releases": [
+         {
+            "ocid",
+            "id",
+            "awards": [
+                { 
+                    "id",
+                    "documents",
+                    "items",
+                    "title",
+                    "description",
+                    "status",
+                    "value",
+                    "contractPeriod",
+            "contracts": [
+                {
+                    "id",
+                    "items",
+                    "signatories",
+                    "awardID",
+                    "title",
+                    "description",
+                    "status",
+                    "period",
+                    "value",
+                    "dateSigned",
+            "parties": [
+                {
+                    "name",
+                    "id",
+                    "identifier",
+                    "roles",
+                    "address",
+                    "contactPoint"
+                    "name",
+                    "id",
+                    "identifier",
+                    "roles",
+            "date": ,
+            "initiationType",
+            "tag",
+            "tender": {
+                "id",
+                "title",
+                "description",
+                "status",
+                "procuringEntity":,
+                "value",
+                "procurementMethod",
+                "procurementMethodDetails",
+                "additionalProcurementCategories",
+                "tenderPeriod",
+                "enquiryPeriod",
+                "documents",
+                "items",
+            "language": "es"
+        }
+```
 ### [Convocatoria](https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/f8eb531f-120c-4e91-bd5d-d43bb28cc696)
 Archivo con formato [CSV (comma-separated values)](https://es.wikipedia.org/wiki/Valores_separados_por_comas) con la información de la convocatoria a participantes para todos los procesos de compras y contrataciones gestionados a través del BAC.
 Contiene el detalle de los pliegos de bases y condiciones (fechas, montos, organizaciones), los documentos web donde se publica la información y el detalle de los ítems que se van a contratar.
