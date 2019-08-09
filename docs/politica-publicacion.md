@@ -1711,7 +1711,7 @@ Archivo con formato CSV que contiene el detalle de las partes participantes (pro
 
 ### Estructura de las tablas
 
-(https://github.com/datosgcba/bac-open-contracting/blob/master/docs/bac-schema.png)
+[[https://github.com/datosgcba/bac-open-contracting/blob/master/docs/bac-schema.png]]
 
 ## Alcance de los datos 
 	
