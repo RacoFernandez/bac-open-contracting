@@ -52,7 +52,7 @@ La información del sistema de compras y contrataciones se encuentra publicada e
 
 Archivo con formato [JSON (JavaScript Object Notation)](https://es.wikipedia.org/wiki/JSON) que contiene la información de todos los procesos de compras publicados en sus diferentes etapas (convocatoria, adjudicación, contratación, participantes). Para cada proceso de compra se asigna un OCID (Open Contracting Identifier), al cual se asocia toda la información referida a las etapas por las que pasa el proceso. 
 
-### Muestra de la estructura del JSON
+#### Muestra de la estructura del JSON
 *Cada uno de los procesos de compras publicados se organizan replicando la siguiente estructura. El campo OCID es el identificador único para cada proceso de compras.*
 
 ```
@@ -129,7 +129,7 @@ Archivo con formato [JSON (JavaScript Object Notation)](https://es.wikipedia.org
 Archivo con formato [CSV (comma-separated values)](https://es.wikipedia.org/wiki/Valores_separados_por_comas) con la información de la convocatoria a participantes para todos los procesos de compras y contrataciones gestionados a través del BAC.
 Contiene el detalle de los pliegos de bases y condiciones (fechas, montos, organizaciones), los documentos web donde se publica la información y el detalle de los ítems que se van a contratar.
 
-### Diccionario de campos
+#### Diccionario de campos
 
 <table>
   <tr>
@@ -679,7 +679,7 @@ Contiene el detalle de los pliegos de bases y condiciones (fechas, montos, organ
 ### [Adjudicación](https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/b7e4bae8-0e0f-4e10-8b89-3860cf5b7f1b) 
 Archivo con formato CSV con la información de la adjudicación de los procesos de compras. Incorpora el detalle de los documentos publicados luego de la adjudicación y los ítems adjudicados. 
 
-### Diccionario de campos
+#### Diccionario de campos
 
 
 <table>
@@ -1084,7 +1084,7 @@ Archivo con formato CSV con la información de la adjudicación de los procesos 
 ### [Contratación](https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/a85472d6-b949-4617-a3a0-50e25f1274b3)
 Archivo con formato CSV con la información de los contratos firmados por las partes participantes del proceso. Contiene el detalle de los montos efectivamente erogados por las reparticiones del GCBA, los ítems contratados, los plazos de contratación.
 
-### Diccionario de campos
+#### Diccionario de campos
 
 <table>
   <tr>
@@ -1500,7 +1500,7 @@ Archivo con formato CSV con la información de los contratos firmados por las pa
 ### [Participantes](https://data.buenosaires.gob.ar/dataset/buenos-aires-compras/archivo/bece0240-eb9b-40c4-8928-cd77c4f62704)
 Archivo con formato CSV que contiene el detalle de las partes participantes (proveedores, compradores, unidades de adquisiciones) de cada uno de los procesos de compras gestionados a través del BAC.
 
-### Diccionario de campos
+#### Diccionario de campos
 
 <table>
   <tr>
@@ -1708,6 +1708,10 @@ Archivo con formato CSV que contiene el detalle de las partes participantes (pro
    </td>
   </tr>
 </table>
+
+### Estructura de las tablas
+
+(https://github.com/datosgcba/bac-open-contracting/blob/master/docs/bac-schema.png)
 
 ## Alcance de los datos 
 	
